@@ -18,9 +18,12 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.browser.customtabs.CustomTabsCallback;
 import androidx.browser.customtabs.CustomTabsClient;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsService;
@@ -82,6 +85,17 @@ public class TwaLauncher {
     private final int mLaunchMode;
 
     private final int mSessionId;
+
+    private CustomTabsCallback mCustomTabsCallback = new CustomTabsCallback() {
+        @Override
+        public Bundle extraCallbackWithResult(@NonNull String callbackName, @Nullable Bundle args) {
+            Bundle result =
+                    QualityEnforcementCallbackHandler.extraCallbackWithResult(callbackName, args);
+            if (result.getBoolean(QualityEnforcementCallbackHandler.KEY_SUCCESS))
+                return result;
+            return null;
+        }
+    };
 
     @Nullable
     private TwaCustomTabsServiceConnection mServiceConnection;
@@ -298,7 +312,7 @@ public class TwaLauncher {
                     .supportsLaunchWithoutWarmup(mContext.getPackageManager(), mProviderPackage)) {
                 client.warmup(0);
             }
-            mSession = client.newSession(null, mSessionId);
+            mSession = client.newSession(mCustomTabsCallback, mSessionId);
 
             if (mSession != null && mOnSessionCreatedRunnable != null) {
                 mOnSessionCreatedRunnable.run();
@@ -315,4 +329,7 @@ public class TwaLauncher {
             mSession = null;
         }
     }
+
+
+
 }
