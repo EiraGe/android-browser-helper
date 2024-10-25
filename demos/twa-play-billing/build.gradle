@@ -21,12 +21,11 @@ def appId = "com.google.androidbrowserhelper.demos.playbilling"
 // def appId = "dev.conn.drink"
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId appId
-        minSdkVersion 21
-        targetSdkVersion 31
+        minSdk 21
+        compileSdk 31
+        targetSdk 31
         versionCode 13
         versionName "13.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

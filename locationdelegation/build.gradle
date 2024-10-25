@@ -18,12 +18,10 @@ apply plugin: 'maven-publish'
 def VERSION = "1.1.1";
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
-
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 31
+        minSdk 21
+        compileSdk 31
+        targetSdk 31
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
