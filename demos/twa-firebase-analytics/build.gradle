@@ -30,8 +30,8 @@ android {
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twa_firebase_analytics"
         minSdk 26
-        compileSdk 31
-        targetSdk 31
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }

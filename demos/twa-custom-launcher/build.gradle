@@ -20,8 +20,8 @@ android {
     defaultConfig {
         applicationId "com.google.androidbrowserhelper"
         minSdk 23
-        compileSdk 31
-        targetSdk 31
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

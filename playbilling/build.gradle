@@ -22,8 +22,8 @@ def VERSION = "1.0.0-alpha11";
 android {
     defaultConfig {
         minSdk 21
-        compileSdk 31
-        targetSdk 31
+        compileSdk 34
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'

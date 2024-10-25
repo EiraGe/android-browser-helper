@@ -24,8 +24,8 @@ android {
         minSdk 21
         // If you are changing this to below 31 you will need to ask for Permission
         // for notification to work.
-        compileSdk 33
-        targetSdk 33
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

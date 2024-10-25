@@ -22,8 +22,8 @@ android {
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twa_offline_first"
         minSdk 21
-        compileSdk 31
-        targetSdk 31
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
