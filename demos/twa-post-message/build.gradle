@@ -19,6 +19,7 @@ plugins {
 }
 
 android {
+    namespace "com.google.androidbrowserhelper.demos.twapostmessage"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twapostmessage"
         minSdk 21

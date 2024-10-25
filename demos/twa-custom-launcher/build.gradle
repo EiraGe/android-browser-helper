@@ -17,8 +17,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.androidbrowserhelper.demo"
     defaultConfig {
-        applicationId "com.google.androidbrowserhelper"
+        applicationId "com.google.androidbrowserhelper.demo"
         minSdk 23
         compileSdk 34
         targetSdk 34

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.androidbrowserhelper.demos.twa_notification_delegation"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twa_notification_delegation"
         minSdk 21

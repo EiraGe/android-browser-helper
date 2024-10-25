@@ -17,6 +17,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.androidbrowserhelper.webshare"
+
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.webshare"
         minSdk 26

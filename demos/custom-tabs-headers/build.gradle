@@ -17,6 +17,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.androidbrowserhelper.demos.customtabsheaders"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.customtabsheaders"
         minSdk 21

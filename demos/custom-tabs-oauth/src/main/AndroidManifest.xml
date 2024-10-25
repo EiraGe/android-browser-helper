@@ -12,8 +12,7 @@
      limitations under the License.
 -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.androidbrowserhelper.demos.customtabsoauth">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- This permission is required to query the GitHub API via an HttpUrlConnection. -->
     <uses-permission android:name="android.permission.INTERNET"/>

@@ -17,6 +17,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.browser.examples.twa_multi_domain"
     defaultConfig {
         applicationId "com.google.browser.examples.twa_multi_domain"
         minSdk 26

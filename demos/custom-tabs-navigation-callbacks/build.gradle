@@ -17,6 +17,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.google.androidbrowserhelper.demos.customtabsnavigationcallbacks"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.customtabsnavigationcallbacks"
         minSdk 21

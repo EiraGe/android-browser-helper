@@ -21,6 +21,7 @@ def appId = "com.google.androidbrowserhelper.demos.playbilling"
 // def appId = "dev.conn.drink"
 
 android {
+    namespace appId
     defaultConfig {
         applicationId appId
         minSdk 21

@@ -17,6 +17,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "org.chromium.customtabsdemos"
+
     defaultConfig {
         applicationId "org.chromium.customtabsdemos"
         minSdk 21

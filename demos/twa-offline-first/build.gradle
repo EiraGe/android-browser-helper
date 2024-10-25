@@ -19,6 +19,7 @@ plugins {
 }
 
 android {
+    namespace "com.google.androidbrowserhelper.demos.twa_offline_first"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twa_offline_first"
         minSdk 21
