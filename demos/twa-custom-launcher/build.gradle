@@ -17,12 +17,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    namespace "com.google.androidbrowserhelper.demo"
     defaultConfig {
-        applicationId "com.google.androidbrowserhelper"
-        minSdkVersion 23
-        targetSdkVersion 31
+        applicationId "com.google.androidbrowserhelper.demo"
+        minSdk 23
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

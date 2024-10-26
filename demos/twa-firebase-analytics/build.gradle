@@ -22,18 +22,18 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.google.gms:google-services:4.3.10'
     }
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    namespace "com.google.androidbrowserhelper.demo.twa_firebase_analytics"
 
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.twa_firebase_analytics"
-        minSdkVersion 26
-        targetSdkVersion 31
+        minSdk 26
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }

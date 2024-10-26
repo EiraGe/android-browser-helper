@@ -17,13 +17,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
-
+    namespace "com.google.androidbrowserhelper.demos.customtabsnavigationcallbacks"
     defaultConfig {
         applicationId "com.google.androidbrowserhelper.demos.customtabsnavigationcallbacks"
-        minSdkVersion 25
-        targetSdkVersion 31
+        minSdk 21
+        compileSdk 34
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
